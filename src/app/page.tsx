@@ -42,7 +42,7 @@ const page = () => {
                     {/* <a href="https://github.com/aayush-agarwal-07" target="_blank" rel="noopener noreferrer">
                         <GitHubLogoIcon className=" h-6 lg:h-10 w-8 lg:w-8 duration-200 hover:-translate-y-2 cursor-pointer" />
                     </a> */}
-                    <a href="https://https://x.com/aayush_0701" target="_blank" rel="noopener noreferrer">
+                    <a href="https://x.com/aayush_0701" target="_blank" rel="noopener noreferrer">
                         <TwitterLogoIcon className=" h-6 lg:h-10 w-8 lg:w-8 duration-200 hover:-translate-y-2 cursor-pointer" />
                     </a>
                     <a href="mailto:aayushagarwal297@gmail.com?body=Hello" target="_blank" rel="noopener noreferrer">

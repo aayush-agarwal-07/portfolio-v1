@@ -44,7 +44,7 @@ const CaseStudyPage: React.FC<CaseStudyPageProps> = ({ caseStudy }) => {
     }
 
     return (
-        <div className="max-w-4xl mx-auto p-6 dark:bg-gray-900 bg-white min-h-screen">
+        <div className="max-w-4xl mx-auto p-6 min-h-screen">
             {/* Hero Image Banner */}
             {/* <div className="relative w-full h-80 mb-8">
                 <Image src={caseStudy.heroImage} alt={caseStudy.title} fill className="object-cover rounded-lg" priority />
@@ -78,7 +78,7 @@ const CaseStudyPage: React.FC<CaseStudyPageProps> = ({ caseStudy }) => {
             <p className="text-lg dark:text-gray-300 text-gray-700 mb-8">{caseStudy.summary}</p>
 
             {/* Content Sections */}
-            <div className="prose dark:prose-invert max-w-none">
+            <div className="max-w-none">
                 {caseStudy.content.sections.map((section, index) => {
                     switch (section.type) {
                         case "heading":

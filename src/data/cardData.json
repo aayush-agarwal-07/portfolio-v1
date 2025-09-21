@@ -47,6 +47,22 @@
       "githubLink": "https://github.com/aayush-agarwal/edtech-recommendation",
       "description": "Designing a personalized course recommendation engine to boost engagement by 25% and completions by 30% in edtech.",
       "type": "Edtech"
+    },
+    {
+      "name": "Threads' Viral Vortex",
+      "image": "/api/placeholder/100/100",
+      "hostedLink": "/case-studies/threads-growth-loops",
+      "githubLink": "https://github.com/aayush-agarwal/threads-growth-loops",
+      "description": "Analyzing viral loops and leveraging RICE epics to propel Meta's Threads to 275M MAUs.",
+      "type": "Social Media/Tech"
+    },
+    {
+      "name": "NoBroker's Neighborhood Nexus",
+      "image": "/api/placeholder/100/100",
+      "hostedLink": "/case-studies/nobroker-urban-retention",
+      "githubLink": "https://github.com/aayush-agarwal/nobroker-urban-retention",
+      "description": "Enhancing retention in Tier-1 societies for NoBroker with vetted pros and predictive packs.",
+      "type": "Real Estate/Services"
     }
   ]
 }

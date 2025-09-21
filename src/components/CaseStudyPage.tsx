@@ -64,15 +64,24 @@ const CaseStudyPage: React.FC<CaseStudyPageProps> = ({ caseStudy }) => {
                 </div>
             </div>
 
+            <div className="mt-4 mb-4 flex gap-2 flex-wrap">
+                <span className={`text-sm font-medium tracking-wide dark:text-white text-black/70 border-2 border-black/30 dark:bg-neutral-700 dark:border-white/10 dark:shadow-lg p-2 rounded-lg mt-2 mr-2 `}>{caseStudy.category}</span>
+                {caseStudy.tags.map((tag, index) => (
+                    <span key={index} className={`text-sm font-medium tracking-wide dark:text-white text-black/70 border-2 border-black/30 dark:bg-neutral-700 dark:border-white/10 dark:shadow-lg p-2 rounded-lg mt-2 mr-2 ${index % 2 === 1 ? " rotate-3" : " -rotate-3"}`}>
+                        {tag}
+                    </span>
+                ))}
+            </div>
+
             {/* Tags and Category */}
-            <div className="flex flex-wrap gap-2 mb-6">
+            {/* <div className="flex flex-wrap gap-2 mb-6">
                 <span className="text-xs rounded-full font-semibold dark:text-white text-black px-3 py-1 dark:bg-white/20 bg-black/20">{caseStudy.category}</span>
                 {caseStudy.tags.map((tag) => (
                     <span key={tag} className="text-xs rounded-full font-semibold dark:text-white text-black px-3 py-1 dark:bg-white/20 bg-black/20">
                         {tag}
                     </span>
                 ))}
-            </div>
+            </div> */}
 
             {/* Summary */}
             <p className="text-lg dark:text-gray-300 text-gray-700 mb-8">{caseStudy.summary}</p>

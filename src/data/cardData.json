@@ -1,0 +1,52 @@
+{
+  "cards": [
+    {
+      "name": "The Good Bug Capstone",
+      "image": "/public/the-good-bug.jpg",
+      "hostedLink": "/case-studies/the-good-bug-capstone",
+      "githubLink": "https://github.com/aayush-agarwal/good-bug-capstone",
+      "description": "Elevating repeat purchase rates from 20% to 50% for a gut health startup using user-centric synbiotics strategies and behavioral science.",
+      "type": "Health/Wellness"
+    },
+    {
+      "name": "SplitBot",
+      "image": "/api/placeholder/100/100",
+      "hostedLink": "/case-studies/shared-expenses-app",
+      "githubLink": "https://github.com/aayush-agarwal/splitbot",
+      "description": "An AI-powered app to streamline roommate expense splitting with UPI integration, reducing disputes by 70% in urban India.",
+      "type": "Fintech"
+    },
+    {
+      "name": "Spotify Premium Growth",
+      "image": "/api/placeholder/100/100",
+      "hostedLink": "/case-studies/spotify-premium-growth",
+      "githubLink": "https://github.com/aayush-agarwal/spotify-growth",
+      "description": "Boosting Spotify Premium conversions by 25% through user research and personalized freemium nudges against YouTube Music.",
+      "type": "Media/Tech"
+    },
+    {
+      "name": "Zomato Tier-1 Delivery",
+      "image": "/api/placeholder/100/100",
+      "hostedLink": "/case-studies/zomato-analytics-metrics",
+      "githubLink": "https://github.com/aayush-agarwal/zomato-delivery",
+      "description": "Enhancing Zomato's retention and engagement in Tier-1 cities with OKRs, KPIs, and AI-driven craving carousels for 36% repeat uplift.",
+      "type": "Food Delivery"
+    },
+    {
+      "name": "VitaFit Communication",
+      "image": "/api/placeholder/100/100",
+      "hostedLink": "/case-studies/vitafit-communication",
+      "githubLink": "https://github.com/aayush-agarwal/vitafit",
+      "description": "Humanizing virtual fitness with scalable touchpoints like AI shoutouts to combat 50% post-session drop-offs at VitaFit.",
+      "type": "Fitness/Wellness"
+    },
+    {
+      "name": "EdTech Recommendation",
+      "image": "/api/placeholder/100/100",
+      "hostedLink": "/case-studies/edtech-recommendation",
+      "githubLink": "https://github.com/aayush-agarwal/edtech-recommendation",
+      "description": "Designing a personalized course recommendation engine to boost engagement by 25% and completions by 30% in edtech.",
+      "type": "Edtech"
+    }
+  ]
+}

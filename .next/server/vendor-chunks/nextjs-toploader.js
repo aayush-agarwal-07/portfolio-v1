@@ -29,7 +29,7 @@ eval("/* __next_internal_client_entry_do_not_use__  cjs */ \nvar I = Object.crea
 
 /* __next_internal_client_entry_do_not_use__  cjs */ 
 const { createProxy } = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
-module.exports = createProxy("/Users/user/Desktop/portfolio-v1/node_modules/nextjs-toploader/dist/index.js");
+module.exports = createProxy("/Users/aayushagarwal/Desktop/Code/Portfolio/portfolio-v1/node_modules/nextjs-toploader/dist/index.js");
  //# sourceMappingURL=index.js.map
 
 

@@ -3,24 +3,25 @@
 import React, { useRef } from "react";
 import { Cpu } from "lucide-react";
 import Image from "next/image";
+import type { StaticImageData } from "next/image";
 
 import ConnectionLine from "./connection-line";
 
-import { docker, CSS, aws, mongodb, nextjs, nodejs, postgresssql, html, react, redux, prisma, tailwind, ts, git } from "@/assets/skills/index";
+import { documentation_knowledge, prototyping, experimentation, customer_feedback, analytics, collaboration_communication, frameworks_methods, ai, roadmapping_tools, pm_resources, project_management, design_collaboration, user_research, market_research } from "@/assets/skills/index";
 import { cn } from "@/lib/utils";
 
-type TechBoxProps = {
-    pinId: string;
-    title: string;
-    image: string;
-    color: string;
-    boxRef: React.RefObject<HTMLDivElement>;
+type Tech = {
+  title: string;
+  image: string | StaticImageData; // <-- allow both
+  color: string;
 };
 
-type Tech = {
-    title: string;
-    image: string;
-    color: string;
+type TechBoxProps = {
+  pinId: string;
+  title: string;
+  image: string | StaticImageData; // <-- same here
+  color: string;
+  boxRef: React.RefObject<HTMLDivElement>;
 };
 
 const TechBox: React.FC<TechBoxProps> = (props) => {
@@ -35,6 +36,7 @@ const TechBox: React.FC<TechBoxProps> = (props) => {
     return (
         <div id={props.pinId.replace("pin", "div")} ref={props.boxRef} className={cn("relative flex-col w-36 h-36 ", borderMap[direction] || "")}>
             <Image src={props.image} width={300} height={300} alt={props.title} className="rounded-xl scale-50" />
+            <p className="text-center text-sm font-medium -mt-6 text-white">{props.title}</p> {/* Added title below image */}
         </div>
     );
 };
@@ -83,7 +85,7 @@ export const TechStack = () => {
                 <div id="placeholder" className=" absolute w-[10rem] flex h-20 rounded-2xl border-2 dark:border-white/40 border-black/40  justify-center items-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-muted z-20">
                     <h1 className="font-bold uppercase flex items-center gap-2 tracking-wider">
                         <Cpu />
-                        Tech Stack
+                        PM Toolkit
                     </h1>
                 </div>
             </div>
@@ -115,80 +117,82 @@ const renderPins = (pinCount: number, idPrefix: string, refs: React.RefObject<HT
 export const techs = {
     stage1: [
         {
-            title: "React",
-            image: react,
+            title: "Roadmapping Tools",
+            image: roadmapping_tools,
             color: "#61DAFB",
         },
         {
-            title: "Next.js",
-            image: nextjs,
+            title: "Prototyping",
+            image: prototyping,
             color: "#bdbdbd",
         },
         {
-            title: "Typescript",
-            image: ts,
+            title: "User Research",
+            image: user_research,
             color: "#007acc",
         },
         {
-            title: "Tailwind CSS",
-            image: tailwind,
+            title: "Design Collaboration",
+            image: design_collaboration,
             color: "#38b2ac",
         },
         {
-            title: "Html",
-            image: html,
+            title: "AI & Productivityl",
+            image: ai,
             color: "#FEFEFE",
         },
     ],
     stage2: [
         {
-            title: "Docker",
-            image: docker,
+            title: "Documentation & Knowledge",
+            image: documentation_knowledge,
             color: "#FEFEFE",
         },
         {
-            title: "Prisma",
-            image: prisma,
+            title: "Project Management",
+            image: project_management,
             color: "#103950",
         },
     ],
-    stage3: [
+  stage3: [
         {
-            title: "MongoDB",
-            image: mongodb,
+            title: "Experimentation",
+            image: experimentation,
             color: "#45A538",
         },
         {
-            title: "Aws",
-            image: aws,
+            title: "Customer Feedback",
+            image: customer_feedback,
             color: "#FD9A01",
         },
     ],
     stage4: [
         {
-            title: "NodeJS",
-            image: nodejs,
+            title: "Analytics & Data",
+            image: analytics,
             color: "#83CD29",
         },
         {
-            title: "Redux",
-            image: redux,
+            title: "Collaboration & Communication",
+            image: collaboration_communication,
             color: "#764abc",
         },
         {
-            title: "CSS",
-            image: CSS,
+            title: "Frameworks & Methods",
+            image: frameworks_methods,
             color: "#1371B6",
         },
         {
-            title: "Git",
-            image: git,
+            title: "PM Learning Resources",
+            image: pm_resources,
             color: "#F03C2E",
         },
         {
-            title: "Sql",
-            image: postgresssql,
+            title: "Market Research",
+            image: market_research,
             color: "#00acd7",
         },
     ],
 };
+
+

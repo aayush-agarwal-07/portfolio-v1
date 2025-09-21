@@ -78,7 +78,7 @@ const Terminalcomp: React.FC = () => {
                 output = "";
                 break;
             case "aayush":
-                output = "Hello there! I am Aayush, a Full Stack Developer experienced in the MERN stack, type about to know more about me";
+                output = "Hello there! I am Aayush, an aspiring Product Manager passionate about building products that blend user needs with business impact — type to know more about me";
                 break;
             case "neofetch":
                 window.location.href = "https://www.youtube.com/watch?v=Rl1ImG2b1k8&t=51s";
@@ -99,7 +99,7 @@ const Terminalcomp: React.FC = () => {
             case "proj ls":
                 output = (
                     <ul>
-                        <li>filmpire</li>
+                        <li>capstone</li>
                         <li>quoterider</li>
                     </ul>
                 );
@@ -107,12 +107,12 @@ const Terminalcomp: React.FC = () => {
             case "help":
                 output = <HelpCommand />;
                 break;
-            case "filmpire":
-                window.location.href = "https://scsdb-react.vercel.app/trending";
+            case "capstone":
+                window.location.href = "https://docs.google.com/document/d/1xs3duOu3N_bjxz5ga8mlaNNgI_a9Vv7PWGDMHblRzOY/edit?tab=t.0#heading=h.wio0uvjh7n78";
                 output = "";
                 break;
             case "quoterider":
-                window.location.href = "https://quoterider-client.onrender.com/";
+                window.location.href = "https://youtube.com/channel/UCMwY3ffymvW7ly6Nrhey86w";
                 output = "";
                 break;
             
@@ -176,7 +176,7 @@ const Terminalcomp: React.FC = () => {
             </div>
             <div className="p-2">
                 <h1 className="text-sm font-medium  opacity-70 tracking-wide">Get started by typing help command below</h1>
-                <span className=" text-xs capitalize font-medium opacity-70 ">Linux enthusiasts i have added a few easter eggs take time to discover</span>
+                <span className=" text-xs capitalize font-medium opacity-70 ">Product enthusiasts i have added a few easter eggs take time to discover</span>
                 <br />
                 <span className=" italic mb-3 text-xs font-medium opacity-60">Tip : Type any of my project name to navigate to their respective hosted links</span>
                 {commands.map((command) => (

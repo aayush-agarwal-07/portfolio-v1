@@ -18,22 +18,32 @@ const AboutPage = () => {
     return (
         <section className=" p-4 w-full lg:max-w-[50%] lg:m-auto">
             <div className="flex flex-col gap-4">
-                <h1 className=" text-3xl lg:text-5xl font-bold tracking-wide mt-7">
+                {/* <h1 className=" text-3xl lg:text-5xl font-bold tracking-wide mt-7">
                     Hi. I&apos;m{" "}
                     <a href="https://x.com/aayush_0701" rel="noopener noreferrer" target="_blank" className=" text-balance text-blue-500">
                         @aayush_0701{" "}
                     </a>
                     🤟
-                </h1>
+                </h1> */}
                 <Image src={aboutmemoji} alt="confused-memoji" height={160} width={160}></Image>
                 <h2 className=" text-3xl flex gap-2 items-center font-bold tracking-wide">
                     <Info />
                     Short Bio
                 </h2>
-                <p className="text-md lg:text-xl flex flex-col gap-2 whitespace-break-spaces font-normal">
-                    <span>Hi, I&apos;m Aayush K Agarwal, a passionate full-stack developer currently based in Noida, Uttar Pradesh, India. I have persued a Bachelor&apos;s in <span className="italic">Electronics and Communications Engineering from ABES Engineering College</span>.</span>
-                    <span className="my-4">My journey as a self-taught developer has fueled my passion for building software that solves real-world problems, which is why much of what I create is open source. My expertise spans front-end technologies, with a particular focus on frameworks like <span className="text-2xl italic text-blue-500">React.js, Tailwind CSS.</span> In my professional experience, I&apos;ve worked as a Software Engineer at Sopra Steria, contributing to significant projects in the healthcare and agricultural sectors, where I specialized in state management and API integration.</span>Whether collaborating with UX/UI designers or working on personal projects like the Filmpier App and Quote Rider, my goal is always to deliver responsive, user-friendly applications that make a difference.
+                <p className="text-md lg:text-xl flex flex-col gap-4 whitespace-break-spaces font-normal">
+                    <span>I don’t wait for opportunities to knock. I build the door, design the handle, and make sure the experience of opening it feels unforgettable.</span>
+
+                    <span>I’ve spent the last few years engineering systems, marketing ideas, and now shaping digital interfaces that people actually click on — and keep coming back to. From shipping microsites across India, Dubai, and Singapore to reinventing merchandising workflows at Ferns N Petals, I’ve seen how small design decisions can bend conversion graphs. That’s where my obsession with product began — at the intersection of user behavior, business intent, and elegant execution.</span>
+
+                    <span>I’m not chasing buzzwords. I’m chasing clarity — the kind that comes from listening to users, questioning assumptions, and cutting through noise to build what matters.</span>
+
+                    <span>Today, I’m sharpening that edge through real-world case studies, growth experiments, and Airtribe’s Product Management program — pushing beyond “good UI” into the thinking behind great products.</span>
+
+                    <span>Titles don’t impress me. Outcomes do.</span>
+
+                    <span>If you’re building something bold and need someone who’ll question the obvious, connect the dots, and ship with intent — let’s talk.</span>
                 </p>
+
                 <div className="flex justify-center flex-wrap gap-8 items-center mt-5 mb-5">
                     <Link href={"/#contact"} className="loadmorebtn flex justify-center items-center">
                         Leave A Message
@@ -53,9 +63,9 @@ const AboutPage = () => {
                     <a href="https://www.linkedin.com/in/aayushkagarwal07/" target="_blank" rel="noopener noreferrer">
                         <LinkedInLogoIcon className=" h-6 lg:h-10 w-8 lg:w-8 duration-200 hover:-translate-y-2 cursor-pointer" />
                     </a>
-                    <a href="https://github.com/aayush-agarwal-07" target="_blank" rel="noopener noreferrer">
+                    {/* <a href="https://github.com/aayush-agarwal-07" target="_blank" rel="noopener noreferrer">
                         <GitHubLogoIcon className=" h-6 lg:h-10 w-8 lg:w-8 duration-200 hover:-translate-y-2 cursor-pointer" />
-                    </a>
+                    </a> */}
                     <a href="https://https://x.com/aayush_0701" target="_blank" rel="noopener noreferrer">
                         <TwitterLogoIcon className=" h-6 lg:h-10 w-8 lg:w-8 duration-200 hover:-translate-y-2 cursor-pointer" />
                     </a>

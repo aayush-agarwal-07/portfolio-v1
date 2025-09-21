@@ -33,7 +33,7 @@ const page = () => {
                 </p> */}
                 <div className="flex items-center gap-3 lg:gap-6 flex-wrap">
                     <CopyCmd />
-                    <a href="https://drive.google.com/file/d/1icBFJ4GUu7SYwYfC5BKWrep_lQ3cAOwk/view" target="_blank" rel="noopener noreferrer">
+                    <a href="https://drive.google.com/file/d/1LMEbEHAxkNzd-tXYl8P8VI4aucG2q6NI/view" target="_blank" rel="noopener noreferrer">
                         <ResumeIcon className=" h-6 lg:h-10 w-8 lg:w-8 duration-200 hover:-translate-y-2 cursor-pointer" />
                     </a>
                     <a href="https://www.linkedin.com/in/aayushkagarwal07/" target="_blank" rel="noopener noreferrer">

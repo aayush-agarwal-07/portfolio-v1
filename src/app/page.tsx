@@ -72,7 +72,7 @@ const page = () => {
 
                     <div className="flex gap-8 w-full justify-center items-center pl-4 pr-4 flex-col pb-7 md:pb-0">
                         <div className="mt-6 relative place-items-center grid grid-cols-1 md:grid-cols-2 gap-8">
-                            {cardData.cards.map(
+                            {cardData.cards.slice(0, 2).map(
                                 (
                                     item,
                                     index, // Replaced projectArray with cardData.cards and removed filter to show all

@@ -11,17 +11,17 @@ import { documentation_knowledge, prototyping, experimentation, customer_feedbac
 import { cn } from "@/lib/utils";
 
 type Tech = {
-  title: string;
-  image: string | StaticImageData; // <-- allow both
-  color: string;
+    title: string;
+    image: string | StaticImageData; // <-- allow both
+    color: string;
 };
 
 type TechBoxProps = {
-  pinId: string;
-  title: string;
-  image: string | StaticImageData; // <-- same here
-  color: string;
-  boxRef: React.RefObject<HTMLDivElement>;
+    pinId: string;
+    title: string;
+    image: string | StaticImageData; // <-- same here
+    color: string;
+    boxRef: React.RefObject<HTMLDivElement>;
 };
 
 const TechBox: React.FC<TechBoxProps> = (props) => {
@@ -36,7 +36,7 @@ const TechBox: React.FC<TechBoxProps> = (props) => {
     return (
         <div id={props.pinId.replace("pin", "div")} ref={props.boxRef} className={cn("relative flex-col w-36 h-36 ", borderMap[direction] || "")}>
             <Image src={props.image} width={300} height={300} alt={props.title} className="rounded-xl scale-50" />
-            <p className="text-center text-sm font-medium -mt-6 text-white">{props.title}</p> {/* Added title below image */}
+            <p className="text-center text-sm font-medium -mt-4 text-gray-800 dark:text-white">{props.title}</p>
         </div>
     );
 };
@@ -137,7 +137,7 @@ export const techs = {
             color: "#38b2ac",
         },
         {
-            title: "AI & Productivityl",
+            title: "AI & Productivity",
             image: ai,
             color: "#FEFEFE",
         },
@@ -154,7 +154,7 @@ export const techs = {
             color: "#103950",
         },
     ],
-  stage3: [
+    stage3: [
         {
             title: "Experimentation",
             image: experimentation,
@@ -194,5 +194,3 @@ export const techs = {
         },
     ],
 };
-
-

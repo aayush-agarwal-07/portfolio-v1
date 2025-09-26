@@ -139,14 +139,14 @@ export const techs = {
         {
             title: "AI & Productivity",
             image: ai,
-            color: "#FEFEFE",
+            color: "#bdbdbd",
         },
     ],
     stage2: [
         {
             title: "Documentation & Knowledge",
             image: documentation_knowledge,
-            color: "#FEFEFE",
+            color: "#F03C2E",
         },
         {
             title: "Project Management",

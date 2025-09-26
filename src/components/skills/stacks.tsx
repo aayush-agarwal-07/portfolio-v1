@@ -33,10 +33,17 @@ const TechBox: React.FC<TechBoxProps> = (props) => {
         stage4: "only-top",
     };
 
+    const marginMap: Record<string, string> = {
+        stage1: "-mt-8",
+        stage2: "-mt-7",
+        stage3: "-mt-9",
+        stage4: "-mt-2",
+    };
+
     return (
         <div id={props.pinId.replace("pin", "div")} ref={props.boxRef} className={cn("relative flex-col w-36 h-36 ", borderMap[direction] || "")}>
             <Image src={props.image} width={300} height={300} alt={props.title} className="rounded-xl scale-50" />
-            <p className="text-center text-sm font-medium -mt-4 text-gray-800 dark:text-white">{props.title}</p>
+            <p className={cn("text-center text-sm font-medium text-gray-800 dark:text-white whitespace-pre-line", marginMap[direction] || "-mt-7")}>{props.title}</p>
         </div>
     );
 };
@@ -71,7 +78,7 @@ export const TechStack = () => {
         },
     };
     return (
-        <section className="relative w-full hidden md:flex flex-col justify-between items-center p-5 gap-8">
+        <section className="relative w-full hidden md:flex flex-col justify-between items-center p-5 gap-8" style={{ padding: "0" }}>
             {renderTechBoxes(techs.stage1, "stage1", refs.stage1.techbox)}
             {renderTechBoxes(techs.stage2, "stage2", refs.stage2.techbox)}
             {renderTechBoxes(techs.stage3, "stage3", refs.stage3.techbox)}
@@ -149,7 +156,7 @@ export const techs = {
             color: "#F03C2E",
         },
         {
-            title: "Project Management",
+            title: "Project\nManagement",
             image: project_management,
             color: "#103950",
         },
